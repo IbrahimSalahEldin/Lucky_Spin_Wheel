@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Cairo:wght@300;400;900&family=Caveat&family=Harmattan:wght@700&family=IBM+Plex+Sans+Arabic:wght@500&family=Noto+Sans+Arabic:wght@400;900&family=Poppins:wght@600&family=Readex+Pro:wght@700&family=Roboto:wght@500&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="mainContent">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 row pt-5 d-flex justify-content-around ">
+                    <div class="col-6 pt-3">
+                        <p class="headingTitle">كملنا معاكم <br> <span class="yearD">16 سنة </span></p>
+                    </div>
+                    <div class="col-5 d-flex IconBurger">
+                        <i class="fa-solid fa-burger"></i>
+                        <p class="burgerWord">برجري</p>
+                    </div>
+                </div>
+                <div class="col-12 flex-wrap  d-flex justify-content-center">
+                    <div class=" d-flex  justify-content-center" >
+                        <div class="mainbox" id="mainbox">
+                            <div class="box" id="box">
+                              <div class="box1">
+                                <span class="font span1"><b>100 نقطة</b></span>
+                                <span class="font span2"><b>بوكس الهبة</b></span>
+                                <span class="font span3"><b>برجر باربكيو سماش</b></span>
+                                <span class="font span4"><b>كوبون 50 ريال</b></span>
+                                <span class="font span5"><b>برجر كرسبي  <br />تشيكن</b></span>
+                              </div>
+                              <div class="box2">
+                                <span class="font span1"><b> 500 ريال</b></span>
+                                <span class="font span2"><b>توصيل مجاني </span>
+                                <span class="font span3"><b>أصابع موزريلا</b></span>
+                                <span class="font span4"><b>100 ريال</b></span>
+                                <span class="font span5"><b>1,000 نقطة </span> 
+                              </div>
+                            </div>
+                            <button class="spin" onclick="spin()"><i class="fa-solid fa-burger"></i></button>
+                        </div>
+                    </div>
+                    <div class="dataInformation row m-2 px-5 mt-1">
+                        <p class="gain"> <i>جــرب</i> <br> واكسب</p>
+                        <p class="info">كملنا 16 سنة، فرع جديد ومنيو جديد صرنا <br>
+                            رهيبين أكثر زورونا بفرع الياسمين الجديد</p>
+                            <p class="mt-5 gainGift">اضغط <span class="giftData">زر السحب في منتصف العجلة</span></p>
+                            <p class="gainGift">امـــلأ<span class="giftData"> بياناتك للدخول في السحب</span></p>
+                            <p class="gainGift">اكسب<span class="giftData"> جائزتك فورا </span></p>
+                            <div class="d-flex mt-5 align-items-center">
+                                <button class="tryNow">جرب الان </button>
+                                <p class="knowdetails">اعـــــرف تفاصيل أكـــــثر</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- form Section -->
+    <section class="FormSection ">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center ">
+                <div class="col-md-4 col-12 d-flex justify-content-center mb-3">
+                    <div class="barcode">
+
+                    </div>
+                </div>
+                <div class="col-md-5 col-12 d-flex justify-content-center ">
+                    <div class="FormRegister ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <audio controls="controls" id="applause" src="./applause.mp3" type="audio/mp3"></audio>
+    <audio controls="controls" id="wheel" src="./wheel.mp3" type="audio/mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

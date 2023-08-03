@@ -6,9 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky Spin</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
-    <h1> any </h1>
-    
+    <section class="mainContent">
+
+    </section>
 </body>
 </html>
