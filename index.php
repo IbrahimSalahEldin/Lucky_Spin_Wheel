@@ -1,3 +1,5 @@
+<?php 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +8,7 @@
     <title>Lucky Spin</title>
 </head>
 <body>
+    <h1> any </h1>
     
 </body>
 </html>
