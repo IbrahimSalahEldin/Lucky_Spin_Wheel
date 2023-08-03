@@ -50,7 +50,7 @@ if(empty($gift) and isset($gift)){
 if($errors){
     $errors_str= json_encode($errors);
 
-    $url="Location:register.php?errors={$errors_str}";
+    $url="Location:../index.php?errors={$errors_str}";
 
     if($formdata){
         $old_data= json_encode($formdata);
@@ -103,7 +103,7 @@ if(empty($gift) and isset($gift)){
 
 if($errors) {
     $errors_str = json_encode($errors);
-    $url = "Location:index.php?errors={$errors_str}";
+    $url = "Location:../index.php?errors={$errors_str}";
     if ($formdata) {
         $old_data = json_encode($formdata);
         $url .= "&old={$old_data}";
@@ -119,12 +119,12 @@ if($errors) {
             $stmt=$db->prepare($query);
             $stmt->bindParam(":username", $name, PDO::PARAM_STR);
             $stmt->bindParam(":useremail", $email, PDO::PARAM_STR);
-            $stmt->bindParam(":usergift", $password, PDO::PARAM_STR);
-            $stmt->bindParam(":userphone", $image_new_name, PDO::PARAM_STR);
+            $stmt->bindParam(":userphone", $phone, PDO::PARAM_STR);
+            $stmt->bindParam(":usergift", $gift, PDO::PARAM_STR);
             $stmt->execute();
             var_dump($stmt->rowCount());
             var_dump($db->lastInsertId());
-            header("Location:index.php");
+            header("Location:../index.php");
         }
 
     } catch (Exception $e) {
