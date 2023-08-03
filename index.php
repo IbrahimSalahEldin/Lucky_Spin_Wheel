@@ -1,4 +1,23 @@
-<?php 
+<?php
+
+
+
+
+if(isset($_GET["errors"])){
+   
+            $errors = json_decode($_GET["errors"], true);
+    
+        }
+        if(isset($_GET["old"])){
+      
+            $old_data = json_decode($_GET["old"], true);
+        
+        }
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
