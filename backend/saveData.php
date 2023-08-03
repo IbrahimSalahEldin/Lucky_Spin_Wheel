@@ -112,8 +112,9 @@ if($errors) {
 }
 }else {
 
+    $table = 'users';
     try {
-    $db = connect_to_DB();
+    $db = connect_to_DB($table);
         if ($db){
             $query="Insert INTO `users` (`Name`, `email`, `phone`, `gift`) Values(:username,:useremail,:userphone,:usergift)";
             $stmt=$db->prepare($query);
