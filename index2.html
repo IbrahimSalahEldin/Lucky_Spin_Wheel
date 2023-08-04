@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Cairo:wght@300;400;900&family=Caveat&family=Harmattan:wght@700&family=IBM+Plex+Sans+Arabic:wght@500&family=Noto+Sans+Arabic:wght@400;900&family=Poppins:wght@600&family=Readex+Pro:wght@700&family=Roboto:wght@500&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Assistant:wght@300&family=Cairo:wght@300;400;900&family=Caveat&family=Harmattan:wght@700&family=IBM+Plex+Sans+Arabic:wght@500&family=Noto+Sans+Arabic:wght@400;900&family=Poppins:wght@600&family=Readex+Pro:wght@700&family=Roboto:wght@500&family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,7 +20,7 @@
                         <p class="headingTitle">كملنا معاكم <br> <span class="yearD">16 سنة </span></p>
                     </div>
                     <div class="col-5 d-flex IconBurger">
-                        <i class="fa-solid fa-burger"></i>
+                        <img src="images/logo2.jpeg" width="70" height="70" alt="">
                         <p class="burgerWord">برجري</p>
                     </div>
                 </div>
@@ -43,18 +43,20 @@
                                 <span class="font span5"><b>1,000 نقطة </span> 
                               </div>
                             </div>
-                            <button class="spin" onclick="spin()"><i class="fa-solid fa-burger"></i></button>
+                            <button class="spin" onclick="spin()"><img src="images/logo2.jpeg" width="45" height="45" alt=""></button>
                         </div>
                     </div>
                     <div class="dataInformation row m-2 px-5 mt-1">
-                        <p class="gain"> <i>جــرب</i> <br> واكسب</p>
-                        <p class="info">كملنا 16 سنة، فرع جديد ومنيو جديد صرنا <br>
-                            رهيبين أكثر زورونا بفرع الياسمين الجديد</p>
+                        <div class="gainImage mt-2">
+                            <img src="images/gain.jpeg" class="gainImaging" alt="" width="400px" height="200px">
+                        </div>
+                        <p class="info">كمــلنا 16 سنــة، فــرع جديــد ومنيــو جديــد صرنـا <br>
+                            رهيبيــن أكثــر زورونــا بفــرع الياسميــن الجديـــد</p>
                             <p class="mt-5 gainGift">اضغط <span class="giftData">زر السحب في منتصف العجلة</span></p>
                             <p class="gainGift">امـــلأ<span class="giftData"> بياناتك للدخول في السحب</span></p>
                             <p class="gainGift">اكسب<span class="giftData"> جائزتك فورا </span></p>
                             <div class="d-flex mt-5 align-items-center">
-                                <button class="tryNow">جرب الان </button>
+                                <!-- <button class="tryNow">جرب الان </button> -->
                                 <p class="knowdetails">اعـــــرف تفاصيل أكـــــثر</p>
                             </div>
                     </div>
@@ -68,32 +70,24 @@
             <div class="row d-flex justify-content-center align-items-center ">
                 <div class="col-md-4 col-12 d-flex justify-content-center mb-3 "dir="ltr">
                     <div class="barcode row d-flex justify-content-center pb-5">
-                        <div class="containIcon mt-4 w-100 ">
-                            <i class="fa-solid fa-globe"></i> burgerie.net
-                        </div>
-                        <div class="containIcon w-100">
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-tiktok"></i>
-                            Burgerie_Sa
-                        </div>
-                        <div class=" containIcon w-100">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <i class="fa-solid fa-phone-flip"></i>
-                            0509834585
+                        <div class="containIcon mt-4 w-100 d-flex justify-content-center">
+                          <img src="images/parcoding.jpeg" width="150px" height="200px" alt="">
                         </div>
                         <div class="w-100 d-flex justify-content-center">
-                            <img src="images/parcode.png" width="180" height="180" alt="">
-                        </div>
-                        <div class="w-100 d-flex justify-content-center">
-                            <div class="containMobile mb-2">
-                                <i class="fa-brands fa-google-play"></i> <span>download <br>
+                            <div class="containMobile mb-2 d-flex justify-content-center align-items-center">
+                                <div>
+                                    <i class="fa-brands fa-google-play"></i> 
+                                </div>
+                                <span style="text-align: center;">download <br>
                                     Google Play</span> 
                             </div>
                         </div>
-                        <div class="w-100 d-flex justify-content-center">
-                            <div class="containMobile">
-                                <i class="fa-brands fa-apple"></i> <span>download <br>
+                        <div class="w-100 d-flex justify-content-center align-items-center">
+                            <div class="containMobile d-flex justify-content-center  align-items-center">
+                                <div>
+                                <i class="fa-brands fa-apple"></i> 
+                                </div>
+                                <span style="text-align: center;">download <br>
                                        App Store</span> 
                             </div>
                         </div>
@@ -102,10 +96,10 @@
                 <div class="col-md-5 col-12 d-flex justify-content-center align-items-center ">
                     <div class="FormRegister row d-flex justify-content-center align-items-around pt-5">
                         <div class="w-100 justify-content-center text-center">
-                            <i class="fa-solid fa-burger " style="font-size: 50px; color: #fdd334;"></i>
+                            <img src="images/logo1.jpeg" width="70" height="70" alt="">
                         </div>
                         
-                        <form action="" class="formData" method="post">
+                        <form action="" class="formData" method="post" >
                             <div class="w-100 d-flex justify-content-center ">
                                 <input type="text" name="name" class="inputForm mb-2" placeholder="الاسم" >
                             </div>
@@ -114,6 +108,9 @@
                               </div>
                               <div class="w-100  d-flex justify-content-center ">
                                 <input type="email" name="email" class="inputForm mb-2" placeholder="الايميل">
+                              </div>
+                              <div class="w-100  d-flex justify-content-center ">
+                                <input type="text" name="gift" class="inputForm mb-2" placeholder="الهدية" hidden>
                               </div>
                               <div class="w-100  d-flex justify-content-center ">
                                 <button type="submit" class="tryNow">جرب الان </button>

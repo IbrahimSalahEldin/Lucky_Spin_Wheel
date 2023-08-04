@@ -6,6 +6,7 @@ color:#ec5427 red font
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Alexandria', sans-serif;
     font-family: 'Assistant', sans-serif;
     font-family: 'Cairo', sans-serif;
     font-family: 'Caveat', cursive;
@@ -35,16 +36,22 @@ color:#ec5427 red font
     margin-top: 80px;
     font-size: 30px;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
 }
 .burgerWord{
     margin-top: 15px;
+    margin-right: 3px;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.07cm white;
 }
 .IconBurger > i{
     font-size: 70px;
     margin-left: 5px;
 }
-
+.gainImaging{
+  width: 400px;
+  height: 200px;
+}
 /* spin wheel  */
 
 .mainbox {
@@ -126,9 +133,9 @@ color:#ec5427 red font
   
   .box1 .span1 b {
     position: absolute;
-    top: 39%;
+    top: 43%;
     right: 60%;
-    transform: rotate(200deg);
+    transform: rotate(280deg);
     text-align: center;
   }
   
@@ -276,7 +283,7 @@ color:#ec5427 red font
   background-color: #ec5427;
   text-align: center;
   position: absolute;
-  top: 130%;
+  top: 105%;
   left: 38%;
 }
 .knowdetails{
@@ -298,6 +305,10 @@ color:#ec5427 red font
       }
 .dataInformation{
     width: 400px;
+}
+.gainImaging{
+  width:300px;
+  height: 150px;
 }
   }
 
@@ -352,13 +363,12 @@ color:#ec5427 red font
   color: white;
   border-radius: 60px;
   background-color: #fdd334;
-  font-size: 10px;
+  font-size: 8px;
   text-align: center;
 }
-.containMobile >i{
+.containMobile >div >i{
   font-size: 22px;
   margin-right: 8px;
-  margin-top: 10px;
 
 }
-  /* end formSection */
+
