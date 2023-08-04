@@ -16,18 +16,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $useremail = $_POST["email"];
     $userpassword = $_POST["password"];
 
+
+    $errors = [];
+    $formdata = [];
+
     $pattern = "/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix";
 
     if (preg_match($pattern, $useremail)) {
         $useremail = $_POST["email"];
     } else {
-        echo "<br>" . "Your email is not valid, please try again";
-        exit();
+       $errors['email'] = "Your email is not valid, please try again";
+       
     }
 
-    $errors = [];
-    $formdata = [];
-
+    
     if (empty($useremail)) {
         $errors['email'] = 'Email is required';
     } else {

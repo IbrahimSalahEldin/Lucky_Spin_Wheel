@@ -1,6 +1,22 @@
 <?php
 
 
+if(isset($_GET["errors"])){
+
+            $errors = json_decode($_GET["errors"], true);
+    
+        }
+        if(isset($_GET["old"])){
+   
+            $old_data = json_decode($_GET["old"], true);
+   
+        }
+
+        if (isset($_GET['errors'])) {
+          $error_message = urldecode($_GET['errors']);
+      
+          
+      }
 
 ?>
 
@@ -45,15 +61,18 @@
         <div class="card-body py-5 px-md-5">
 
           <form action="validation.php" method="post">
+          <span class="text-danger"> <?php  echo $error_message; ?> </span>
             <!-- Email input -->
             <div class="form-outline mb-4">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+            <span class="text-danger"> <?php if(isset($errors['email'])) echo $errors['email']; ?> </span>
+            <input type="email" class="form-control" name="email" id="email"  value="<?php if(isset($old_data['email'])) echo $old_data['email']; ?>" placeholder="Enter your email">
               <label class="form-label" for="form2Example1">Email address</label>
             </div>
 
             <!-- Password input -->
             <div class="form-outline mb-4">
-            <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password">
+            <span class="text-danger"> <?php if(isset($errors['password'])) echo $errors['password']; ?> </span>
+            <input type="password" class="form-control" name="password"  value="<?php if(isset($old_data['password'])) echo $old_data['password']; ?>"  id="password" placeholder="Enter your password">
               <label class="form-label" for="form2Example2">Password</label>
             </div>
 
